@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+// setting
+@import "setting/reset.scss";
+@import "setting/fonts.scss";
+@import "setting/common.scss";
+
+
+// layout
+@import "layout/Header.scss";
+@import "layout/Footer.scss";
+@import "layout/Contents.scss";
+
+// pages
+@import "pages/Visual.scss";
+@import "pages/Profile.scss";

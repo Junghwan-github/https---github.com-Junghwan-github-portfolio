@@ -1,0 +1,31 @@
+// header__nav
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  background: $primary-bg-color;
+  .header__nav {
+      width: 1600px;
+      margin: 0 auto;
+      border-bottom: 1px solid #222;
+    ul {
+      height: 80px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      li {
+        margin: 0 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        a {
+          font-family: $primary-font-face;
+          font-weight: 300;
+          font-size: 1.1rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
