@@ -1,6 +1,6 @@
 [
     {"id": 1, "title": "INTRO", "url": "/" },
-    {"id": 2, "title": "ME", "url": "me" },
+    {"id": 2, "title": "ABOUT ME", "url": "me" },
     {"id": 3, "title": "SKILLS", "url": "skills" },
     {"id": 4, "title": "PORTFOLIO", "url": "portfolio" }
 ]

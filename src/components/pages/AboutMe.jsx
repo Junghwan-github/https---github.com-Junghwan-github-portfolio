@@ -1,12 +1,12 @@
 import React from "react"
 import Contents from "../layout/Contents";
-import Profile from "../detail/me/Profile";
+import Resume from "../detail/about me/Resume";
 
 
 const Me = () => {
     return (
         <Contents>
-            <Profile/>
+            <Resume/>
         </Contents>
     );
 };
