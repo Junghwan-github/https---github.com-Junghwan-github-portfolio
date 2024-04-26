@@ -1,0 +1,8 @@
+[
+    {"id": 1, "alt": "vscode-icon", "path": "file_type_vscode_icon_130084.png" , "name": "VSCode" , "graph": 70 },
+    {"id": 2, "alt": "intellij-icon", "path": "intellij_alt_macos_bigsur_icon_190060.png" , "name": "IntelliJ IDEA" , "graph": 50  },
+    {"id": 3, "alt": "eclipse-icon", "path": "eclipse_94656.png" , "name": "Eclipse" , "graph": 30 },
+    {"id": 4, "alt": "photoshop-icon", "path": "psd_file_design_graphic_digital_artwork_adobe_photoshop_icon_191032.png" , "name": "PhotoShop" , "graph": 60},
+    {"id": 5, "alt": "github-icon", "path": "github-logo_icon-icons.com_73546.png" , "name": "GitHub" , "graph": 30 },
+    {"id": 6, "alt": "git-icon", "path": "file_type_git_icon_130581.png" , "name": "Git" , "graph": 30 }
+]

@@ -1,0 +1,7 @@
+[
+    {"id": 1, "alt": "html-icon", "path": "free-icon-html-5-174854.png" , "name": "HTML5" },
+    {"id": 2, "alt": "css-icon", "path": "free-icon-css-3-732190.png" , "name": "CSS3" },
+    {"id": 3, "alt": "js-icon", "path": "file_type_js_official_icon_130509.png" , "name": "JavaScript" },
+    {"id": 4, "alt": "jquery-icon", "path": "jquery_plain_wordmark_logo_icon_146445.png" , "name": "jQuery" },
+    {"id": 5, "alt": "react-icon", "path": "react_original_logo_icon_146374.png" , "name": "React" }
+]

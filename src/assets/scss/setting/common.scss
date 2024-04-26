@@ -3,8 +3,6 @@ $primary-font-face: "Noto Sans KR", sans-serif;
 $primary-color: #aaa;
 $primary-bg-color: #000;
 
-
-
 // common setting
 $section-title-fz: 1.5rem;
 $section-title-fw: 900;
@@ -13,6 +11,9 @@ $section-title-color: #333;
 $span-line-block-width: 25px;
 $span-line-block-height: 4px;
 $span-line-block-bg: #4c00ff;
+
+// about me setting
+$resume-theme-color:  #08D9D6;
 
 .ff-noto {
     font-family: $primary-font-face;
@@ -36,5 +37,5 @@ $span-line-block-bg: #4c00ff;
     display: block;
     width: $span-line-block-width;
     height: $span-line-block-height;
-    background: $span-line-block-bg;
+    background: var(--bgc);
 }

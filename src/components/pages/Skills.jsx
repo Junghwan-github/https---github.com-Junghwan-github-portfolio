@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
 import Contents from "../layout/Contents";
-
+import FullStackSkills from "../detail/skills/FullStackSkills";
 
 const Skills = () => {
-    return (
-        <Contents>
-            <p>스킬</p>
-        </Contents>
-    );
+  return (
+    <Contents>
+      <FullStackSkills />
+    </Contents>
+  );
 };
 
 export default Skills;
