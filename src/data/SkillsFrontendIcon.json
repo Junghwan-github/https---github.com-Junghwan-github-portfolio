@@ -1,7 +1,55 @@
 [
-    {"id": 1, "alt": "html-icon", "path": "free-icon-html-5-174854.png" , "name": "HTML5" },
-    {"id": 2, "alt": "css-icon", "path": "free-icon-css-3-732190.png" , "name": "CSS3" },
-    {"id": 3, "alt": "js-icon", "path": "file_type_js_official_icon_130509.png" , "name": "JavaScript" },
-    {"id": 4, "alt": "jquery-icon", "path": "jquery_plain_wordmark_logo_icon_146445.png" , "name": "jQuery" },
-    {"id": 5, "alt": "react-icon", "path": "react_original_logo_icon_146374.png" , "name": "React" }
+  {
+    "id": 1,
+    "alt": "html-icon",
+    "path": "free-icon-html-5-174854.png",
+    "name": "HTML5",
+    "graph": 80,
+    "description": [
+        "HTML의 기본 구조를 이해하고 있으며, 웹 표준을 지키려 노력합니다."
+    ]
+  },
+  {
+    "id": 2,
+    "alt": "css-icon",
+    "path": "free-icon-css-3-732190.png",
+    "name": "CSS3",
+    "graph": 80,
+    "description": [
+        "포지션 속성을 이해하고 있으며, 레이아웃 제어가 가능합니다.",
+        "Flex 와 Grid를 활용한 반응형 웹페이지 제작이 가능합니다."
+    ]
+  },
+  {
+    "id": 3,
+    "alt": "js-icon",
+    "path": "file_type_js_official_icon_130509.png",
+    "name": "JavaScript",
+    "graph": 60,
+    "description": [
+        "ES6+ 문법에 익숙합니다.",
+        "이벤트 핸들링, DOM 조작, 데이터 처리가 가능합니다."
+    ]
+  } ,
+  {
+    "id": 4,
+    "alt": "jquery-icon",
+    "path": "jquery_plain_wordmark_logo_icon_146445.png",
+    "name": "jQuery",
+    "graph": 60,
+    "description": [
+       "jQuery를 통한 간결한 DOM 조작 및 동적 기능 구현이 가능합니다."
+    ]
+  },
+  {
+    "id": 5,
+    "alt": "react-icon",
+    "path": "react_original_logo_icon_146374.png",
+    "name": "React",
+    "graph": 30,
+    "description": [
+        "현재 집중적으로 학습 중입니다.",
+        "컴포넌트 기반 아키텍처 이해 및 재사용 가능한 컴포넌트 작성이 가능합니다."
+    ]
+  }
 ]

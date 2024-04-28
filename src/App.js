@@ -1,26 +1,39 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-import Intro from './components/pages/Intro';
-import AboutMe from './components/pages/AboutMe';
-import Skills from './components/pages/Skills';
-import Portfolio from './components/pages/Portfolio';
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Intro from "./components/pages/Intro";
+import AboutMe from "./components/pages/AboutMe";
+import Skills from "./components/pages/Skills";
+import Portfolio from "./components/pages/Portfolio";
+import "./App.css";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Header attr={"header__wrap"} />
-      <Routes>
-        <Route path="/" element={<Intro />} />
-        <Route path="/me" element={<AboutMe />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
+      <ContentTransition />
       <Footer attr={"footer__wrap"} />
-    </BrowserRouter>
+    </Router>
   );
 };
+
+const ContentTransition = () => {
+  const location = useLocation();
+
+  return (
+    <TransitionGroup className="transition-group-wrap">
+      <CSSTransition key={location.key} classNames="slide" timeout={300}> 
+          <Routes location={location}>
+            <Route path="/" element={<Intro />} />
+            <Route path="/me" element={<AboutMe />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+          </Routes>
+      </CSSTransition>
+    </TransitionGroup>
+  );
+};
+
 export default App;

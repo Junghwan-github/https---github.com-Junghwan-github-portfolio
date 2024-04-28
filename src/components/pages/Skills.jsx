@@ -1,6 +1,6 @@
 import React from "react";
-import Contents from "../layout/Contents";
 import FullStackSkills from "../detail/skills/FullStackSkills";
+import Contents from "../layout/Contents";
 
 const Skills = () => {
   return (
