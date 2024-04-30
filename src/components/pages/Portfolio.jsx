@@ -1,10 +1,11 @@
 import React from "react";
 import Contents from "../layout/Contents";
+import PortfolioRender from "../detail/portfolio/PortfolioRender"
 
 const Portfolio = () => {
   return (
     <Contents>
-      <p>포트폴리오</p>
+      <PortfolioRender />
     </Contents>
   );
 };

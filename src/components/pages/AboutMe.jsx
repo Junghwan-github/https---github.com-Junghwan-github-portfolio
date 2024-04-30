@@ -1,11 +1,11 @@
 import React from "react";
-import Resume from "../detail/about me/Resume";
+import AboutMeRender from "../detail/about/AboutMeRender";
 import Contents from "../layout/Contents"
 
 const Me = () => {
   return (
     <Contents>
-      <Resume />
+      <AboutMeRender />
     </Contents>
   );
 };

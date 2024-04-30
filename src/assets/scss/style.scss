@@ -10,8 +10,10 @@
 @import "layout/Header.scss";
 @import "layout/Footer.scss";
 @import "layout/Contents.scss";
+@import "layout/Modal.scss";
 
 // pages
-@import "pages/Visual.scss";
-@import "pages/Resume.scss";
-@import "pages/FullStackSkills.scss";
+@import "pages/IntroPages.scss";
+@import "pages/AboutMePages.scss";
+@import "pages/SkillsPages.scss";
+@import "pages/PortfolioPages.scss";

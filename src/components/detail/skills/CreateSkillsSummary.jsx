@@ -42,7 +42,6 @@ const CreateSkillsSummary = () => {
                 작성할 수 있습니다.
               </li>
               <li>상태 관리 라이브러리인 Redux 를 활용하여 애플리케이션 상태를 효과적으로 관리할 수 있습니다.</li>
-              <li>현재 TypeScript 와 병행하여 집중적으로 학습 중입니다.</li>
             </ul>
           </li>
         </ul>

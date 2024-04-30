@@ -9,7 +9,12 @@ import Skills from "./components/pages/Skills";
 import Portfolio from "./components/pages/Portfolio";
 import "./App.css";
 
+
+
+
 const App = () => {
+
+
   return (
     <Router>
       <Header attr={"header__wrap"} />
@@ -24,7 +29,7 @@ const ContentTransition = () => {
 
   return (
     <TransitionGroup className="transition-group-wrap">
-      <CSSTransition key={location.key} classNames="slide" timeout={300}> 
+      <CSSTransition key={location.key} classNames="page" timeout={300}> 
           <Routes location={location}>
             <Route path="/" element={<Intro />} />
             <Route path="/me" element={<AboutMe />} />

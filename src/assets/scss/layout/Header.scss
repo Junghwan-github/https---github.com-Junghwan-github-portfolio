@@ -11,6 +11,7 @@ header {
       margin: 0 auto;
       border-bottom: 1px solid #222;
     ul {
+      width: 100%;
       height: 80px;
       display: flex;
       justify-content: flex-end;
@@ -24,8 +25,26 @@ header {
           font-weight: 300;
           font-size: 1.1rem;
           color: $primary-color;
+          transition: all 0.3s;
+        }:hover {
+          font-weight: 400;
+          color: #fff;
+          transition: all 0.3s;
         }
       }
     }
   }
 }
+
+.header__nav > ul > li:first-child {
+  margin-left: 20px; 
+  margin-right: auto;
+  > a {
+    font-weight: 300;
+    font-size: 1.1rem;
+    > span {
+      font-weight: 800;
+    }
+  }
+}
+

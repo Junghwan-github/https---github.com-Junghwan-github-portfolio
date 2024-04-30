@@ -1,0 +1,58 @@
+.portfolio__wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+
+  .project-list-wrap {
+    width: 100%;
+    height: 100%;
+    .item-list {
+      width: 100%;
+      height: 100%;
+      > ul {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        > li {
+          cursor: pointer;
+          width: 100%;
+          .item-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: var(--img);
+            background-size: cover;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            .hover-view {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              h3 {
+                font-family: $primary-font-face;
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: #fff;
+              
+              }
+            }
+          }
+          >:hover::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #00000094;
+          }
+        }
+      }
+    }
+  }
+}

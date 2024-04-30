@@ -7,6 +7,9 @@ const Header = (props) => {
         <header id="header" className={props.attr} role="heading" aria-level="1">
             <nav className="header__nav">
                 <ul>
+                    <li>
+                        <Link to="/">PARK <span>JUNG HWAN</span></Link>
+                    </li>
                     {navigationItems.map(navItem => (
                     <li key={navItem.id}>
                        <Link to={navItem.url}>{navItem.title}</Link>
