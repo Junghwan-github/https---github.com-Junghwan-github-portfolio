@@ -4,5 +4,5 @@
     {"id": 3, "alt": "eclipse-icon", "path": "eclipse_94656.png" , "name": "Eclipse" , "graph": 30 },
     {"id": 4, "alt": "photoshop-icon", "path": "psd_file_design_graphic_digital_artwork_adobe_photoshop_icon_191032.png" , "name": "PhotoShop" , "graph": 60},
     {"id": 5, "alt": "github-icon", "path": "github-logo_icon-icons.com_73546.png" , "name": "GitHub" , "graph": 30 },
-    {"id": 6, "alt": "git-icon", "path": "file_type_git_icon_130581.png" , "name": "Git" , "graph": 30 }
+    {"id": 6, "alt": "git-icon", "path": "file_type_git_icon_130581.png" , "name": "git" , "graph": 30 }
 ]

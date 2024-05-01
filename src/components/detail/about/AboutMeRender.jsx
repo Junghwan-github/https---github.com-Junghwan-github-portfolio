@@ -4,7 +4,9 @@ import CreateResumeList from "./CreateResumeLIstBox";
 import CreateResumeIntroduction from "./CreateIntroductionBox";
 import CreateNameCard from "./CreateNameCard";
 
+
 const AboutMeRender = () => {
+
   let titleBarColor = "#08D9D6";
   let nameCardImagePath = "assets/images/face-photo.png";
 

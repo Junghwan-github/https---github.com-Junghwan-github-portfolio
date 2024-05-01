@@ -6,10 +6,13 @@ header {
   position: fixed;
   z-index: 9999;
   background: $primary-bg-color;
+  .header__nav-mobile {
+    display: none;
+  }
   .header__nav {
-      width: 1600px;
-      margin: 0 auto;
-      border-bottom: 1px solid #222;
+    width: 1600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #222;
     ul {
       width: 100%;
       height: 80px;
@@ -26,7 +29,8 @@ header {
           font-size: 1.1rem;
           color: $primary-color;
           transition: all 0.3s;
-        }:hover {
+        }
+        :hover {
           font-weight: 400;
           color: #fff;
           transition: all 0.3s;
@@ -37,7 +41,7 @@ header {
 }
 
 .header__nav > ul > li:first-child {
-  margin-left: 20px; 
+  margin-left: 20px;
   margin-right: auto;
   > a {
     font-weight: 300;
@@ -48,3 +52,73 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+  header {
+    .header__nav-mobile {
+      width: 100%;
+      height: 70px;
+      position: relative;
+      display: block;
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translate(0, -50%);
+        a {
+          font-family: $primary-font-face;
+          font-weight: 300;
+          font-size: 1.1rem;
+          color: $primary-color;
+          transition: all 0.3s;
+          span {
+            font-weight: 800;
+          }
+        }
+      }
+      .hamburger-button {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        background: transparent;
+        border: none;
+        transform: translate(0, -50%);
+        > span {
+          height: 25px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-between;
+          align-items: center;
+          .hamburger-bar {
+            display: block;
+            width: 35px;
+            height: 2px;
+            background: #fff;
+          }
+        }
+      }
+      .hamburger-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background: #fff;
+        height: 100%;
+        ul {
+          height: 300px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: flex-start;
+          align-items: flex-start; 
+          li {
+            a {
+              color: #222;
+            }
+          }
+        }
+      }
+    }
+    .header__nav {
+      display: none;
+    }
+  }
+}

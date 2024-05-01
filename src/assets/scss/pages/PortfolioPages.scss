@@ -8,50 +8,169 @@
   .project-list-wrap {
     width: 100%;
     height: 100%;
-    .item-list {
-      width: 100%;
-      height: 100%;
-      > ul {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        > li {
-          cursor: pointer;
-          width: 100%;
-          .item-box {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background-image: var(--img);
-            background-size: cover;
-            background-position: 0 0;
-            background-repeat: no-repeat;
-            .hover-view {
+
+      .slick-next,
+      .slick-prev {
+        display: none;
+    }
+    .slick-custom-next,
+    .slick-custom-prev {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      background: transparent;
+      border: none;
+      z-index: 9999;
+      font-size: 2.5rem;
+      color: #222;
+      transform: translate(0, -50%);
+    } 
+    .slick-custom-next {
+      right: 35px;
+    }
+    .slick-custom-prev {
+      left: 35px;
+    }
+  }
+}
+.project-item-box {
+  height: calc(100vh - 220px);
+  border-radius: 15px;
+  background: #fff;
+
+  h3 {
+    padding: 50px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: $primary-font-face;
+    font-size: 2rem;
+    font-weight: 800;
+    color: $primary-font-color;
+  }
+  .flex-container {
+    width: 1600px;
+    height: calc(100vh - 380px);
+    padding: 0 120px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    .img-box {
+      width: 760px;
+      position: relative;
+      background-image: var(--img);
+      background-size: cover;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      margin-right: 50px;
+    }
+    .content-box {
+      position: relative;
+      font-family: $primary-font-face;
+      width: 550px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      .content-features {
+        font-weight: 600;
+      }
+      > div:nth-of-type(3) {
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ddd;
+      }
+      .content-count {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+
+      .content-state {
+        position: absolute;
+        top: -6px;
+        left: 115px;
+        padding: 5px 5px 6px;
+        font-size: 1rem;
+        background: #0084ff;
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .content-desc {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        overflow-wrap: break-word;
+      }
+
+      .contribution {
+        font-size: 1rem;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      > div:nth-of-type(4) {
+        > div {
+          margin-bottom: 10px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: center;
+          span {
+            display: inline-block;
+            width: 65px;
+            font-size: 0.88rem;
+            font-weight: 400;
+          }
+          .front-bar,
+          .back-bar {
+            margin-left: 5px;
+            width: 100px;
+            height: 5px;
+            background: #ddd;
+            > div {
+              position: relative;
+              width: var(--width);
+              height: 100%;
+              background: #5900ff;
+            }
+            ::before {
+              content: var(--con);
+              width: 100%;
+              height: 100%;
               position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              h3 {
-                font-family: $primary-font-face;
-                font-size: 1.3rem;
-                font-weight: 800;
-                color: #fff;
-              
-              }
+              top: -4px;
+              left: 110px;
+              font-size: 0.8rem;
             }
           }
-          >:hover::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "";
-            width: 100%;
-            height: 100%;
-            background: #00000094;
-          }
         }
+      }
+      .content-link {
+        font-weight: 600;
+        a {
+          font-size: 1rem;
+          color: #222;
+          font-weight: 400;
+        }
+      }
+      .content-git {
+        font-weight: 600;
+        a {
+          font-size: 1rem;
+          color: #222;
+          font-weight: 400;
+        }
+      }
+      .content-technologies {
+        display: inline-block;
+        padding: 5px 9px 6px;
+        margin-right: 5px;
+        font-size: 0.88rem;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        color: #222;
       }
     }
   }

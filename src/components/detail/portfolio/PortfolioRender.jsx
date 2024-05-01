@@ -1,12 +1,12 @@
 import React from "react";
-import CreateProjectList from "./CreateProjectList";
+import CreateProjectListSlider from "./CreateProjectListSlider";
 
 const PortfolioRender = () => {
   
   return (
     <div className="portfolio__wrap">
       <div className="project-list-wrap">
-      <CreateProjectList />
+      <CreateProjectListSlider />
       </div>
     </div>
   );
