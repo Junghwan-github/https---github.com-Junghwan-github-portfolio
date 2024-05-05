@@ -34,7 +34,7 @@ const ContentTransition = () => {
             <Route path="/" element={<Intro />} />
             <Route path="/me" element={<AboutMe />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/portfolios" element={<Portfolio />} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
       </CSSTransition>
     </TransitionGroup>
