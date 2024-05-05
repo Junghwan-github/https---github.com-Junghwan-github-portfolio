@@ -31,7 +31,7 @@ const ContentTransition = () => {
     <TransitionGroup className="transition-group-wrap">
       <CSSTransition key={location.key} classNames="page" timeout={300}> 
           <Routes location={location}>
-            <Route path="/" element={<Intro />} />
+            <Route path="/home" element={<Intro />} />
             <Route path="/me" element={<AboutMe />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/portfolio" element={<Portfolio />} />
