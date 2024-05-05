@@ -24,20 +24,25 @@ function CreateSkillsList({ use }) {
     <ul className="skills-list">
       {skillsData.map((skillsItem) => (
         <li key={skillsItem.id}>
-          <div className="item-icon">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/icon/${skillsItem.path}`}
-              alt={skillsItem.alt}
-            />
-          </div>
-          <span className="item-content">{skillsItem.name}</span>
-          <div className="proficiency-wrap">
-            <span>Proficiency</span>
-            <div className="proficiency-graph">
-              <div
-                className="graph-fill" data-fill={`${skillsItem.graph}%`}
-                style={{ "--fill": `${skillsItem.graph}%` }} 
-              ></div>
+          <div className="skills-title">
+            <div className="item-icon">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/icon/${skillsItem.path}`}
+                alt={skillsItem.alt}
+              />
+            </div>
+            <div className="skills-title-content">
+              <span className="item-content">{skillsItem.name}</span>
+              <div className="proficiency-wrap">
+                {/* <span>Proficiency</span> */}
+                <div className="proficiency-graph">
+                  <div
+                    className="graph-fill"
+                    data-fill={`${skillsItem.graph}%`}
+                    style={{ "--fill": `${skillsItem.graph}%` }}
+                    ></div>
+                </div>
+              </div>
             </div>
           </div>
         </li>

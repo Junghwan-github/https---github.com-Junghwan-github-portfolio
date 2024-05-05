@@ -1,0 +1,39 @@
+.transition-group-wrap {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(10%);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(-10%);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .transition-group-wrap {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+  }
+}

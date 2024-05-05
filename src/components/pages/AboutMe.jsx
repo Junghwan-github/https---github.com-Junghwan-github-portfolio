@@ -1,14 +1,13 @@
-import React from "react"
-import Contents from "../layout/Contents";
-import Resume from "../detail/about me/Resume";
-
+import React from "react";
+import AboutMeRender from "../detail/about/AboutMeRender";
+import Contents from "../layout/Contents"
 
 const Me = () => {
-    return (
-        <Contents>
-            <Resume/>
-        </Contents>
-    );
+  return (
+    <Contents>
+      <AboutMeRender />
+    </Contents>
+  );
 };
 
 export default Me;

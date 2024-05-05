@@ -1,11 +1,11 @@
 import React from "react";
+import SkillsRender from "../detail/skills/SkillsRender";
 import Contents from "../layout/Contents";
-import FullStackSkills from "../detail/skills/FullStackSkills";
 
 const Skills = () => {
   return (
     <Contents>
-      <FullStackSkills />
+      <SkillsRender />
     </Contents>
   );
 };

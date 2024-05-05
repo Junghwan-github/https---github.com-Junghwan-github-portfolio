@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
+import IntroRender from "../detail/intro/IntroRender";
 import Contents from "../layout/Contents";
-import Visual from "../detail/intro/Visual";
 
 const Intro = () => {
-    return (
-        <Contents>
-            <Visual />
-        </Contents>
-    );
+  return (
+    <Contents>
+      <IntroRender />
+    </Contents>
+  );
 };
 
 export default Intro;

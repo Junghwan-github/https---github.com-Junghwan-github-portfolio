@@ -1,6 +1,46 @@
 [
-    {"id": 1, "alt": "java-icon", "path": "java_original_wordmark_logo_icon_146459.png" , "name": "JAVA" },
-    {"id": 2, "alt": "spring-boot-icon", "path": "boot_spring_logo_icon_214693.png" , "name": "Spring Boot" },
-    {"id": 3, "alt": "php-icon", "path": "php_icon_130857.png" , "name": "PHP" },
-    {"id": 4, "alt": "mysql-icon", "path": "mysql_original_wordmark_logo_icon_146417.png" , "name": "MySQL" }
+  {
+    "id": 1,
+    "alt": "java-icon",
+    "path": "java_original_wordmark_logo_icon_146459.png",
+    "name": "Java",
+    "graph": 50,
+    "description": [
+        "HTML의 기본 구조를 이해하고 웹 페이지를 구성할 수 있습니다.",
+        "폼 요소와 입력 태그 활용"
+    ]
+  },
+  {
+    "id": 2,
+    "alt": "spring-boot-icon",
+    "path": "boot_spring_logo_icon_214693.png",
+    "name": "Spring Boot",
+    "graph": 50,
+    "description": [
+        "기본 구조 및 시맨틱 HTML 이해",
+        "폼 요소와 입력 태그 활용"
+    ]
+  },
+  {
+    "id": 3,
+    "alt": "php-icon",
+    "path": "php_icon_130857.png",
+    "name": "PHP",
+    "graph": 50,
+    "description": [
+        "기본 구조 및 시맨틱 HTML 이해",
+        "폼 요소와 입력 태그 활용"
+    ]
+  },
+  {
+    "id": 4,
+    "alt": "mysql-icon",
+    "path": "mysql_original_wordmark_logo_icon_146417.png",
+    "name": "MySQL",
+    "graph": 50,
+    "description": [
+        "기본 구조 및 시맨틱 HTML 이해",
+        "폼 요소와 입력 태그 활용"
+    ]
+  }
 ]
