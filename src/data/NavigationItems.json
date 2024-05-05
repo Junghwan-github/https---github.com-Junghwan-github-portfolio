@@ -1,5 +1,5 @@
 [
-    {"id": 1, "title": "ABOUT ME", "url": "me" },
-    {"id": 2, "title": "SKILLS", "url": "skills" },
-    {"id": 3, "title": "PORTFOLIO", "url": "portfolio" }
+    {"id": 1, "title": "About Me", "url": "me" },
+    {"id": 2, "title": "Skills", "url": "skills" },
+    {"id": 3, "title": "Portfolio", "url": "portfolio" }
 ]
