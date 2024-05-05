@@ -16,7 +16,7 @@ const App = () => {
 
 
   return (
-    <Router>
+    <Router basename="/portfolio">
       <Header attr={"header__wrap"} />
       <ContentTransition />
       <Footer attr={"footer__wrap"} />
@@ -31,10 +31,10 @@ const ContentTransition = () => {
     <TransitionGroup className="transition-group-wrap">
       <CSSTransition key={location.key} classNames="page" timeout={300}> 
           <Routes location={location}>
-            <Route path="./" element={<Intro />} />
-            <Route path="./me" element={<AboutMe />} />
-            <Route path="./skills" element={<Skills />} />
-            <Route path="./portfolios" element={<Portfolio />} />
+            <Route path="/" element={<Intro />} />
+            <Route path="/me" element={<AboutMe />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/portfolios" element={<Portfolio />} />
           </Routes>
       </CSSTransition>
     </TransitionGroup>
