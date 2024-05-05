@@ -15,7 +15,7 @@ const Header = (props) => {
       <nav className="header__nav">
         <ul>
           <li>
-            <Link to="/home">
+            <Link to="/">
               PARK <span>JUNG HWAN</span>
             </Link>
           </li>
@@ -28,7 +28,7 @@ const Header = (props) => {
       </nav>
       <nav className="header__nav-mobile">
         <h1 className="logo">
-          <Link to="/home">
+          <Link to="/">
             PARK <span>JUNG HWAN</span>
           </Link>
         </h1>
