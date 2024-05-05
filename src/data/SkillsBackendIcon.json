@@ -15,7 +15,7 @@
     "alt": "spring-boot-icon",
     "path": "boot_spring_logo_icon_214693.png",
     "name": "Spring Boot",
-    "graph": 50,
+    "graph": 60,
     "description": [
         "기본 구조 및 시맨틱 HTML 이해",
         "폼 요소와 입력 태그 활용"
@@ -26,7 +26,7 @@
     "alt": "php-icon",
     "path": "php_icon_130857.png",
     "name": "PHP",
-    "graph": 50,
+    "graph": 30,
     "description": [
         "기본 구조 및 시맨틱 HTML 이해",
         "폼 요소와 입력 태그 활용"
@@ -37,7 +37,7 @@
     "alt": "mysql-icon",
     "path": "mysql_original_wordmark_logo_icon_146417.png",
     "name": "MySQL",
-    "graph": 50,
+    "graph": 40,
     "description": [
         "기본 구조 및 시맨틱 HTML 이해",
         "폼 요소와 입력 태그 활용"
