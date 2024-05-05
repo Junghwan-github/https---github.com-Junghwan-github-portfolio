@@ -48,7 +48,7 @@ class SimpleSlider extends React.Component {
               <div className="flex-container">
                 <div
                   className="img-box"
-                  style={{ "--img": `url("assets/images/${projectItem.img}")` }}
+                  style={{ "--img": `url("${process.env.PUBLIC_URL}/assets/images/${projectItem.img}")` }}
                 ></div>
                 <div className="content-box">
                   <div>

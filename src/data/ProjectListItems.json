@@ -10,7 +10,7 @@
       "backend": 70
     },
     "features": "여행 컨텐츠 일정 등록 및 사용자간 공유기능",
-    "link": "http://docs.yi.or.kr:8089/",
+    "link": "http://docs.yi.or.kr:8089",
     "git": "https://github.com/Junghwan-github/DAYTE",
     "technologies": [
       "JSP",
@@ -77,7 +77,7 @@
       "backend": 100
     },
     "features": "포트폴리오",
-    "link": "https://junghwan-github.github.io/portfolio/",
+    "link": "https://junghwan-github.github.io/portfolio",
     "git": "https://github.com/Junghwan-github/portfolio",
     "technologies": [
       "React",

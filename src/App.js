@@ -16,7 +16,7 @@ const App = () => {
 
 
   return (
-    <Router>
+    <Router basename="/portfolio">
       <Header attr={"header__wrap"} />
       <ContentTransition />
       <Footer attr={"footer__wrap"} />
@@ -34,7 +34,7 @@ const ContentTransition = () => {
             <Route path="/" element={<Intro />} />
             <Route path="/me" element={<AboutMe />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/portfolios" element={<Portfolio />} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
       </CSSTransition>
     </TransitionGroup>
