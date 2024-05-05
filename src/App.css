@@ -1,8 +1,8 @@
 .transition-group-wrap {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background: #000;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
 }
 
 .page-enter {
@@ -15,7 +15,7 @@
   transition: opacity 300ms, transform 300ms;
 }
 
-.page-exit  {
+.page-exit {
   opacity: 1;
   transform: translateY(-10%);
 }
@@ -24,4 +24,16 @@
   opacity: 0;
   transform: translateY(0%);
   transition: opacity 300ms, transform 300ms;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .transition-group-wrap {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+  }
 }

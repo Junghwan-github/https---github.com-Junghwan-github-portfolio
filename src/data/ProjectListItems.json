@@ -34,7 +34,7 @@
     },
     "features": "회사 제품 소개 및 시공사례 가 주 목적인 반응형 웹페이지",
     "link": "http://shinhwa.info",
-    "git": "http://docs.yi.or.kr:8089/",
+    "git": "https://github.com/Junghwan-github/shinhwa-screen",
     "technologies": [
       "PHP",
       "MySQL",
@@ -56,7 +56,7 @@
     },
     "features": "회사 제품 소개 및 시공사례 가 주 목적인 반응형 웹페이지",
     "link": "https://dwhannam.com",
-    "git": "http://docs.yi.or.kr:8089/",
+    "git": "https://github.com/Junghwan-github/dwhannam",
     "technologies": [
       "PHP",
       "MySQL",
@@ -77,8 +77,8 @@
       "backend": 100
     },
     "features": "포트폴리오",
-    "link": "https://docs.yi.or.kr:8089",
-    "git": "http://docs.yi.or.kr:8089/",
+    "link": "https://junghwan-github.github.io/portfolio/",
+    "git": "https://github.com/Junghwan-github/portfolio",
     "technologies": [
       "React",
       "Git/GitHub"

@@ -17,7 +17,7 @@ const AboutMeRender = () => {
         <CreateNameCard path={nameCardImagePath} addr={"대구광역시 북구"} />
         <div className="info-box">
           <h3>Education</h3>
-          <CreateResumeList use={"edu"} mr={"0px"} mb={"0px"} clv={"76px"} vlv={"90px"} />
+          <CreateResumeList use={"edu"} mr={"0px"} mb={"0%"} clv={"76px"} vlv={"90px"} />
         </div>
         <div className="info-box">
           <h3>Related Education</h3>

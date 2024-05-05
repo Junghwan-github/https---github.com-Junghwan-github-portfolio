@@ -38,3 +38,47 @@
   );
   z-index: 0;
 }
+
+
+@media (max-width: 768px) {
+  .background-video {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: calc(100vh - 160px);
+    overflow: hidden;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    p {
+      width: 85%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $primary-font-face;
+      font-weight: 900;
+      font-size: 5rem;
+      color: #ffffff6b;
+      z-index: 1;
+      line-height: 5.5rem;
+    }
+  }
+  
+  .background-video::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.24) 0%,
+      rgba(0, 0, 0, 1) 30%
+    );
+    z-index: 0;
+  }
+}

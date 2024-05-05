@@ -83,7 +83,7 @@ header {
         border: none;
         transform: translate(0, -50%);
         > span {
-          height: 25px;
+          height: 22px;
           display: flex;
           flex-flow: column nowrap;
           justify-content: space-between;
@@ -92,33 +92,63 @@ header {
             display: block;
             width: 35px;
             height: 2px;
+
             background: #fff;
+            opacity: 1;
+            transition: all 0.3s;
           }
         }
       }
-      .hamburger-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
+      .active {
+        > span {
+          > .hamburger-bar:nth-child(1) {
+            transform: translateY(500%) rotate(45deg);
+          }
+          > .hamburger-bar:nth-child(3) {
+            transform: translateY(-500%) rotate(-45deg);
+          }
+          > .hamburger-bar:nth-child(2) {
+            opacity: 0;
+          }
+        }
+      }
+    }
+    .hamburger-menu {
+      font-family: $primary-font-face;
+      visibility: hidden;
+      ul {
+        transition: all 0.3s;
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        padding: 20px;
+        // display: flex;
+        // flex-flow: column nowrap;
+        // justify-content: flex-start;
+        // align-items: flex-start;
         background: #fff;
-        height: 100%;
-        ul {
-          height: 300px;
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: flex-start;
-          align-items: flex-start; 
-          li {
-            a {
-              color: #222;
-            }
+        border-radius: 10px;
+        border: 1px solid #eee;
+        opacity: 0;
+        li {
+          padding: 6px 0;
+          a {
+            font-size: 0.88rem;
+            color: #222;
+            font-weight: 500;
           }
         }
       }
     }
-    .header__nav {
-      display: none;
+    .active {
+      visibility: visible;
+      ul {
+        right: 20px;
+        opacity: 1;
+      }
     }
+  }
+  .header__nav {
+    display: none;
   }
 }
